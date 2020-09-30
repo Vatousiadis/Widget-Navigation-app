@@ -5,6 +5,7 @@ import Dropdown from './components/Dropdown';
 import Translate from './components/Tsanslate';
 import Route from './components/Route';
 import Header from './components/Header';
+import useDarkMode from './hooks/useDarkmode';
 
 const items = [
     {
@@ -37,6 +38,13 @@ const options = [
 ];
 
 export default () => {
+
+    const [darkMode, setDarkMode] = useDarkMode();
+    const onChangeDarkMode = () => {
+        !darkMode ? setDarkMode(true) : setDarkMode(false)
+    };
+
+
     const [selected, setSelected] = useState(options[0])
     return (
         <div>
@@ -53,6 +61,10 @@ export default () => {
                 <p style={{ color: selected.value }}>This text is {selected.value}</p>
             </Route>
             <Route path="/translate"><Translate /></Route>
+            <div className="ui toggle checkbox">
+                <input type="checkbox" name="public" onChange={onChangeDarkMode} />
+                <label>Activate Dark Mode</label>
+            </div>
         </div>
     );
 };

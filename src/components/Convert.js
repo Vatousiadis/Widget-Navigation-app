@@ -31,7 +31,7 @@ const Convert = ({ language, text }) => {
     }, [language, debouncedText]);
 
     return (
-        <div>
+        <div className="dark-mode">
             <h1 className="ui header">{translated}</h1>
         </div>
     );

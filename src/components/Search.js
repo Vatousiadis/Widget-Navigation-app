@@ -36,7 +36,7 @@ const Search = () => {
 
     const renderedResults = results.map((results) => {
         return (
-            <div key={results.pageid} className="item">
+            <div key={results.pageid} className="item dark-mode">
                 <div className="right floated content">
                     <a
                         className="ui button"
@@ -58,7 +58,7 @@ const Search = () => {
 
     return (
         <div>
-            <div className="ui form">
+            <div className="ui form dark-mode">
                 <div className='field'>
                     <label>Enter Search Topic</label>
                     <input
@@ -71,7 +71,7 @@ const Search = () => {
             <div className="ui celled list">{renderedResults}</div>
             {!debouncedTerm ?
 
-                <div class="ui active centered inline loader"></div>
+                <div className="ui active centered inline loader"></div>
                 : <></>}
 
 

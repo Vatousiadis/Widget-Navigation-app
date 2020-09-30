@@ -27,7 +27,7 @@ const Dropdown = ({ label, options, selected, onSelectedChange }) => {
         return (
             <div
                 key={option.value}
-                className="item"
+                className="item dark-mode"
                 onClick={() => onSelectedChange(option)}
             >
                 {option.label}
@@ -36,7 +36,7 @@ const Dropdown = ({ label, options, selected, onSelectedChange }) => {
     });
 
     return (
-        <div ref={ref} className="ui form">
+        <div ref={ref} className="ui form dark-mode">
             <div className="field">
                 <label className="label">{label}</label>
                 <div onClick={() => setOpen(!open)}

@@ -3,7 +3,7 @@ import Link from './Link';
 
 const Header = () => {
     return (
-        <div className="ui secondary pointing menu dark-mode">
+        <div className="ui secondary pointing menu ">
             <Link href="/" className="item">
                 Accordion
             </Link>

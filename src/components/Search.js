@@ -37,7 +37,7 @@ const Search = () => {
 
     const renderedResults = results.map((results) => {
         return (
-            <div key={results.pageid} className="item dark-mode">
+            <div key={results.pageid} className="item ">
                 <div className="right floated content">
                     <a
                         className="ui button"
@@ -59,7 +59,7 @@ const Search = () => {
 
     return (
         <div>
-            <div className="ui form dark-mode">
+            <div className="ui form ">
                 <div className='field'>
                     <label>Enter Search Topic</label>
                     <input

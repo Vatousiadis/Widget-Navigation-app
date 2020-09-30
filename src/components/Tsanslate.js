@@ -5,6 +5,7 @@ import Dropdown from './Dropdown';
 import Convert from './Convert';
 import './darkmode.css';
 
+
 const options = [
     {
         label: 'Afrikaans',
@@ -26,7 +27,7 @@ const Translate = () => {
 
     return (
         <div>
-            <div className="ui form dark-mode">
+            <div className="ui form">
                 <div className="field">
                     <label>Enter Text</label>
                     <input value={text} onChange={(e) => setText(e.target.value)} />

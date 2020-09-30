@@ -42,9 +42,8 @@ export default () => {
 
     const [darkMode, setDarkMode] = useDarkMode();
     const onChangeDarkMode = () => {
-        !darkMode ? setDarkMode(false) : setDarkMode(true)
+        darkMode ? setDarkMode(false) : setDarkMode(true)
     };
-
 
     const [selected, setSelected] = useState(options[0])
     return (
@@ -63,7 +62,7 @@ export default () => {
             </Route>
             <Route path="/translate"><Translate /></Route>
             <div className="ui toggle checkbox">
-                <input type="checkbox" name="public" onChange={onChangeDarkMode} />
+                <input type="checkbox" name="public" value={darkMode} onChange={onChangeDarkMode} />
                 <label>Activate Dark Mode</label>
             </div>
         </div>

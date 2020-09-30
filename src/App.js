@@ -6,6 +6,7 @@ import Translate from './components/Tsanslate';
 import Route from './components/Route';
 import Header from './components/Header';
 import useDarkMode from './hooks/useDarkmode';
+import './components/darkmode.css';
 
 const items = [
     {
@@ -41,7 +42,7 @@ export default () => {
 
     const [darkMode, setDarkMode] = useDarkMode();
     const onChangeDarkMode = () => {
-        !darkMode ? setDarkMode(true) : setDarkMode(false)
+        !darkMode ? setDarkMode(false) : setDarkMode(true)
     };
 
 

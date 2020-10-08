@@ -10,7 +10,6 @@ import './components/darkmode.css';
 
 const items = [
     {
-        id: 'title',
         title: 'Favourite color?',
         content: 'Purple'
     },
@@ -53,12 +52,12 @@ export default () => {
         <div className="content">
             <div>
                 <div className="content dropwdown">
-                <i class="sun icon sun" color="#00ffff"></i>
-                <div className="ui toggle checkbox toggle ">
-                    <input type="checkbox" name="public" value={darkMode} onChange={onChangeDarkMode} />
-                    <label></label>
-                </div>
-                <i class="moon icon moon" color="#00ffff"></i>
+                    <i class="sun icon sun" ></i>
+                    <div className="ui toggle checkbox ">
+                        <input type="checkbox" name="public" value={darkMode} onChange={onChangeDarkMode} />
+                        <label></label>
+                    </div>
+                    <i class="moon icon moon" ></i>
                 </div>
                 <Header />
                 <Route path="/"><Accordion items={items} /></Route>

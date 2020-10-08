@@ -37,17 +37,17 @@ const Search = () => {
 
     const renderedResults = results.map((results) => {
         return (
-            <div key={results.pageid} className="item ">
-                <div className="right floated content">
+            <div key={results.pageid} className="item search ">
+                <div className="right floated content search">
                     <a
-                        className="ui button"
-                        href={`https://en.wikipedia.org?curid=${results.pageid}`}
+                        className="ui button search"
+                        href={`https://en.wikipedia.org?curid=${results.pageid} search`}
                     >
                         Link
                         </a>
                 </div>
-                <div className="content">
-                    <div className="header">
+                <div className="content search">
+                    <div className="header search">
                         {results.title}
                     </div>
                     <span dangerouslySetInnerHTML={{ __html: results.snippet }}></span>
@@ -60,19 +60,18 @@ const Search = () => {
     return (
         <div>
             <div className="ui form ">
-                <div className='field'>
-                    <label>Enter Search Topic</label>
+                <div className='field '>
+                    <label className='search'>Enter Search Topic</label>
                     <input
                         value={term}
                         onChange={e => setTerm(e.target.value)}
-                        className="input"
+                        className=" input "
                     />
                 </div>
             </div>
-            <div className="ui celled list">{renderedResults}</div>
+            <div className="ui celled list search">{renderedResults}</div>
             {!debouncedTerm ?
-
-                <div className="ui active centered inline loader"></div>
+                <div className="ui active centered inline loader search"></div>
                 : <></>}
 
 

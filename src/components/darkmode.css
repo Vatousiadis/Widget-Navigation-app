@@ -1,5 +1,72 @@
+.dark-mode .title { 
+  background-color: #1a1919;
+  color:aliceblue;
+  transition: background-color 0.3s ease;
+}
+
 .dark-mode {
   background-color: #1a1919;
-  color: #999;
+  color:aliceblue;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode .content{
+  background-color: #1a1919;
+  color:aliceblue;
+  transition: background-color 0.3s ease;
+}
+
+/* HEADER */
+.dark-mode .header .item{
+  background-color: #1a1919;
+  color:aliceblue;
+  transition: background-color 0.3s ease;
+  margin-left: 0cm;
+  margin-right: 0cm;
+}
+
+/* DROPDOWN */
+.dark-mode .dropdown-label {
+  background-color: #1a1919;
+  color:aliceblue !important;
+  transition: background-color 0.3s ease;
+}
+
+/*CHECKBOX*/
+.dark-mode .checkbox {
+  background-color: #1a1919;
+  color:aliceblue;
+  transition: background-color 0.3s ease;
+}
+.sun{
+  color: darkgoldenrod;
+  font-size: 180% !important;
+  margin-left: 30%;
+}
+.moon{
+  color: darkturquoise;
+  font-size: 180% !important;
+  margin-right: 30%;
+}
+
+.content{
+  margin-left: 30%;
+  margin-right: 30%;
+}
+/*SEARCH*/
+.dark-mode .search {
+  background-color: #1a1919;
+  color:aliceblue !important;
+  transition: background-color 0.3s ease;
+}
+.dark-mode .button {
+  background-color: aliceblue !important;
+  color: #1a1919 !important;
+  transition: background-color 0.3s ease;
+}
+/*TRANSLATE*/
+.dark-mode .translate {
+  background-color: #1a1919;
+  color:aliceblue !important;
   transition: background-color 0.3s ease;
 }

@@ -33,7 +33,7 @@ const Convert = ({ language, text }) => {
 
     return (
         <div className="">
-            <h1 className="ui header">{translated}</h1>
+            <h1 className="ui header translate">{translated}</h1>
         </div>
     );
 };

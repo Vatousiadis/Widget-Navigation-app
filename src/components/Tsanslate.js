@@ -18,6 +18,26 @@ const options = [
     {
         label: 'Hindi',
         value: 'hi'
+    },
+    {
+        label: 'Greek',
+        value: 'el'
+    },
+    {
+        label: 'German',
+        value: 'de'
+    },
+    {
+        label: 'French',
+        value: 'fr'
+    },
+    {
+        label: 'Spanish',
+        value: 'es'
+    },
+    {
+        label: 'Russian',
+        value: 'ru'
     }
 ];
 

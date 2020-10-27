@@ -69,7 +69,7 @@ const Search = () => {
                     />
                 </div>
             </div>
-            <div className="ui celled list search">{renderedResults}</div>
+            <div className="ui relaxed divided list search">{renderedResults}</div>
             {!debouncedTerm ?
                 <div className="ui active centered inline loader search"></div>
                 : <></>}

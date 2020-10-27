@@ -25,9 +25,17 @@
   margin-right: 0cm;
 }
 
+.item:hover{
+  background-color: #1a1919;
+  color:grey !important;
+  transition: background-color 0.3s ease;
+  margin-left: 0cm;
+  margin-right: 0cm;
+}
+
 /* DROPDOWN */
 .dark-mode .dropdown-label {
-  background-color: #1a1919;
+  background-color: #1a1919 !important;
   color:aliceblue !important;
   transition: background-color 0.3s ease;
 }

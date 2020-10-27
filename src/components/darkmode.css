@@ -32,6 +32,11 @@
   transition: background-color 0.3s ease;
 }
 
+.dropdown-label:hover {
+  background-color:grey!important;
+  color:aliceblue !important;
+}
+
 /*CHECKBOX*/
 .dark-mode .checkbox {
   background-color: #1a1919;

@@ -46,18 +46,17 @@ export default () => {
     };
 
 
-
     const [selected, setSelected] = useState(options[0])
     return (
         <div className="content">
             <div>
                 <div className="content dropwdown">
-                    <i class="sun icon sun" ></i>
-                    <div className="ui toggle checkbox ">
-                        <input type="checkbox" name="public" value={darkMode} onChange={onChangeDarkMode} />
+                    <i className="sun icon sun" ></i>
+                    <div className="ui toggle  checkbox ">
+                        <input type="checkbox" name="public" checked={darkMode} value={darkMode} onChange={onChangeDarkMode} />
                         <label></label>
                     </div>
-                    <i class="moon icon moon" ></i>
+                    <i className="moon icon moon" ></i>
                 </div>
                 <Header />
                 <Route path="/"><Accordion items={items} /></Route>

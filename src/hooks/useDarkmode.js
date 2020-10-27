@@ -3,7 +3,7 @@ import useMedia from './useMedia';
 import useLocalStorage from './useLocalStorage';
 
 const useDarkMode = () => {
-    const [enabledState, setEnabledState] = useLocalStorage('dark-mode-enabled');
+    const [enabledState, setEnabledState] = useLocalStorage('');
     const prefersDarkMode = usePrefersDarkMode();
 
     const enabled =

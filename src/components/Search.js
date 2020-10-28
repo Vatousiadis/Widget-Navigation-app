@@ -38,7 +38,7 @@ const Search = () => {
     const renderedResults = results.map((results) => {
         return (
             <div key={results.pageid} className="item search ">
-                <div className="right floated content search">
+                <div className="right floated search">
                     <a
                         className="ui button search"
                         href={`https://en.wikipedia.org?curid=${results.pageid} search`}
